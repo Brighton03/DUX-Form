@@ -153,7 +153,7 @@
             }
         }
 
-        function returnHome() {
+        function editInput() {
             document.getElementById("signUp").style.display = "block";
             document.getElementById("confirm").style.display = "none";
         }
@@ -192,14 +192,15 @@
                 </div>
                 <div class="column">
                     <p style="font-family: 'Montserrat'; float: left; font-size: 26px; color: white; font-weight:bold; padding-bottom:40px;">Only shortlisted individuals will be contacted.</p><br />
-                    <button onclick="showConfirmation()" class="button" style="font-family: 'Montserrat'; float: left; padding:10px 20px 10px 20px; margin-right:10px; font-size: 26px; color: black; border-radius:5px; border: none;" />Submit</button>
+                    <button onclick="showConfirmation()" class="button" style="font-family: 'Montserrat'; float: left; padding:10px 20px 10px 20px; margin-right:10px; font-size: 26px; color: black; border-radius:5px; border: none;">Submit</button>
                     <input type="reset" class="button2" style="font-family: 'Montserrat'; float: left; padding:10px 20px 10px 20px; margin-left:10px; font-size: 26px; color: black; border-radius:5px; border: none;" />
                 </div>
             </form>
             <div style="display:none;" id="confirm">
                 <p style="font-family: 'Montserrat'; float: left; font-size: 26px; color: white; font-weight:bold; padding-bottom:40px;">Successfully submitted to database!<br />
                 <br />
-                <button onclick="returnHome()" class="button" style="font-family: 'Montserrat'; padding:10px 20px 10px 20px; margin-right:10px; font-size: 26px; color: black; border-radius:5px; border: none;">Edit inputs</button>
+                <button onclick="window.location.reload()" class="button" style="font-family: 'Montserrat'; float: left; padding:10px 20px 10px 20px; margin-right: 10px; font-size: 26px; color: black; border-radius: 5px; border: none;">Return Home</button>
+                <button onclick="editInput()" class="button2" style="font-family: 'Montserrat'; float: right; padding:10px 20px 10px 20px; margin-right: 10px; font-size: 26px; color: black; border-radius: 5px; border: none;">Edit inputs</button>
             </div>
         </div>
     </div>
